@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", e => {
     e.preventDefault();
     if (descriptionField.value === "" || dueDateField === "") {
-      alert("Enter a task or due date.")
+      alert("Task/due date cannot be empty.")
     } else {
       buildToDoList(descriptionField.value, dueDateField.value);
       form.reset();
